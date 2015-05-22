@@ -4,11 +4,15 @@ var rewire = require('rewire');
 
 var ParentComponent = rewire('../ParentComponent.jsx');
 
-var ChildMock = React.createClass({
-  render: function () {
-    return <div className="child-mock-component" />;
-  }
-});
+function getMock(componentName) {
+  return React.createClass({
+    render: function () {
+      return React.createElement(componentName);
+    }
+  });
+}
+
+var ChildMock = getMock('ChildComponent');
 
 ParentComponent.__set__('Child', ChildMock);
 
