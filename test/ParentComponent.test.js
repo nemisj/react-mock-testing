@@ -27,10 +27,4 @@ describe('ParentComponent', function() {
 
   });
 
-  it('should render without child', function() {
-    var markup = React.renderToStaticMarkup(<ParentComponent standalone={true} />);
-
-    expect(markup).to.not.contains(childType);
-  });
-
 });

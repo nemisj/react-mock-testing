@@ -6,13 +6,7 @@ module.exports = React.createClass({
   displayName: 'ParentComponent',
 
   renderChildren: function() {
-
-    if (this.props.standalone === true) {
-      return null;
-    } else {
-      return <Child />;
-    }
-
+    return <Child childName="Name of the child"/>;
   },
 
   render: function() {
