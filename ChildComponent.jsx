@@ -4,6 +4,10 @@ module.exports = React.createClass({
   displayName: 'ChildComponent',
 
   render: function() {
-    return <div className="child-component"></div>;
+    return (
+      <div className="child-component">
+        Inner Text
+      </div>
+    );
   }
 });
