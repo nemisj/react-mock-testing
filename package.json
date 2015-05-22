@@ -1,0 +1,19 @@
+{
+  "name": "react-mock-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register"
+  },
+  "author": "Maks Nemisj<maks@nemisj.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
